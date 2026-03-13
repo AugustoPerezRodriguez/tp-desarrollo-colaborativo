@@ -1,5 +1,5 @@
 *{
-    border: 1px solid black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 body{
 font-family: Arial, sans-serif;
@@ -41,6 +41,7 @@ padding:12px 20px;
 color:white;
 cursor:pointer;
 border-radius: 8px;
+font-weight:bold;
 }
 
 button:hover{
