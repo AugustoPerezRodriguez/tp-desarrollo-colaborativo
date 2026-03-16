@@ -6,6 +6,9 @@
 <link rel="stylesheet" href="style.css">
 </head>
 
+
+<body>
+
 <header>
 
     <h2>Ideas Último Año</h2>
@@ -18,14 +21,11 @@
 
 </header>
 
-<body>
-
-
 <section class="hero">
-
-<h1>Propuestas para el último año</h1>
-<p>Votá ideas para hacer este último año inolvidable.</p>
-
+<div>
+    <h1>Propuestas para el último año</h1>
+    <p>Votá ideas para hacer este último año inolvidable.</p>
+</div>
 <button id="votar">Apoyar esta idea</button>
 
 <p id="contador">Votos: 0</p>
@@ -36,19 +36,20 @@
 <section class="propuesta">
 
 <h2>Enviar una propuesta</h2>
+<div>
+    <form id="formPropuesta">
 
-<form id="formPropuesta">
+    <label>Tu nombre</label>
+    <input type="text" id="nombre">
 
-<label>Tu nombre</label>
-<input type="text" id="nombre">
+    <label>Tu propuesta</label>
+    <input type="text" id="idea">
 
-<label>Tu propuesta</label>
-<input type="text" id="idea">
-
-<button>Enviar propuesta</button>
-
-<p id="mensaje"></p>
-
+    <button>Enviar propuesta</button>
+</div>
+<div>
+    <p id="mensaje"></p>
+</div>
 </form>
 
 </section>
