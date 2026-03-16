@@ -18,13 +18,23 @@ const form = document.getElementById("formPropuesta")
 
 form.addEventListener("submit", function(e){
 
+e.preventDefault()
+
 let nombre = document.getElementById("nombre").value
 let idea = document.getElementById("idea").value
 
-if(nombre = "" || idea == ""){
+let mensaje = document.getElementById("mensaje")
 
-document.getElementById("mensaje").innerText = "Completa todos los campos"
+if(nombre === "" || idea === ""){
 
+mensaje.innerText = "Completa todos los campos"
+
+}
+else{
+
+mensaje.innerText = "Propuesta enviada correctamente"
+
+form.reset()
 }
 
 })
